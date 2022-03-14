@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario | Mora's Cakes</title>
+</head>
+<body>
+    <header>
+        <img src="./../resources/Pompiere.png" alt="Logo Mora's Cakes" />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./cakes.html">Pasteles</a></li>
+        </ul>
+    </nav>
+    <section class="formulario">
+        <h1>Llena este formulario para realizar tu pedido</h1>
+        <form action="./../js/pedido.js" id="formulario-pedido" method="post">
+            <!-- DATOS DEL CLIENTE -->
+            <label for="nombre">Nombre(s):</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Ricardo Uriel"><br><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ejemplo: Mora Campos"><br><br>
+            <label for="tel1">Número de teléfono:</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="Ejemplo: 55 5555 5555"><br><br>
+            <label for="correo1">Correo electrónico:</label><br>
+            <input type="email" id="correo1" name="correo1" placeholder="Ejemplo: correo@correo.com"><br><br>
+            <label for="descripcion">Descripción del pastel:</label><br>
+            <input type="text" id="descripcion" name="descripcion" placeholder="Ejemplo: Pastel infantil"><br><br>
+            <!-- ELECCIÓN DE SABOR -->
+            <p>Escoja la combinación de sabores:</p>
+            <small>El precio total será el promedio de los sabores elegidos.</small><br>
+            <input type="checkbox" id="sabor1" name="sabor1" value="Fresa">
+            <label for="sabor1">$150 Fresa</label><br>
+            <input type="checkbox" id="sabor2" name="sabor2" value="Chocolate">
+            <label for="sabor2">$150 Chocolate</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="Mango">
+            <label for="sabor3">$165 Mango</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="Café">
+            <label for="sabor3">$165 Café</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="Tres leches">
+            <label for="sabor3">$170 Tres leches</label><br>
+            <input type="checkbox" id="sabor3" name="sabor3" value="Pistache">
+            <label for="sabor3">$180 Pistache</label><br>
+            <!-- ELECCIÓN DE ADORNOS -->
+            <p>Escoja sus adornos:</p>
+            <input type="checkbox" id="adorno2" name="adorno2" value="Platos">
+            <label for="adorno2">$25 Platos</label><br>
+            <input type="checkbox" id="adorno1" name="adorno1" value="Velas">
+            <label for="adorno1">$30 Velas</label><br>
+            <input type="checkbox" id="adorno3" name="adorno3" value="Figuras">
+            <label for="adorno3">$30 Figuras</label><br>
+            <input type="checkbox" id="adorno3" name="adorno3" value="Globos">
+            <label for="adorno3">$30 Globos</label><br>
+            <input type="checkbox" id="adorno3" name="adorno3" value="Velas mágicas">
+            <label for="adorno3">$70 Velas mágicas</label><br><br>
+            <!-- BOTONES -->
+            <input type="submit" value="Enviar">
+            <input type="reset">
+        </form>
+    </section>
+</body>
+</html>
